@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Header</title>
+  <link rel="stylesheet" href="Portfolio.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="logo.jpg" alt="Smruti Panigrahy"></div>
+      <div class="mobile-menu-btn" id="menu-btn">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="content">
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-text">
+          <p class="intro">Hello, I'm</p>
+          <h1 class="name">Smruti Panigrahy</h1>
+          <br>
+          <p class="description">
+            I'm a developer with a passion for clean design and functional code. I enjoy creating responsive,
+            user-friendly interfaces that solve real problems. I’m always excited to learn and improve.
+          </p>
+
+          <p class="company">Currently exploring new challenges and growing my skills</p>
+          <div class="buttons">
+            <a href="Smruti Panigrahy_resume.pdf" target = "_blank" class="btn outline">View CV</a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="Sp.jpg" alt="Smruti Panigrahy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <h2 class="skills-title">My Skillset</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="html.jpg" alt="HTML" />
+          <p class="skill-name">HTML</p>
+          <p class="skill-level">Advanced</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="css.jpg" alt="CSS" />
+          <p class="skill-name">CSS</p>
+          <p class="skill-level">Advanced</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="js.jpg" alt="JavaScript" />
+          <p class="skill-name">JavaScript</p>
+          <p class="skill-level">Intermediate</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="react.jpg" alt="React" />
+          <p class="skill-name">React</p>
+          <p class="skill-level">Intermediate</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="node.jpg" alt="Node.js" />
+          <p class="skill-name">Node.js</p>
+          <p class="skill-level">Intermediate</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="python.jpg" alt="Python" />
+          <p class="skill-name">Python</p>
+          <p class="skill-level">Intermediate</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="sql.jpg" alt="MySQL" />
+          <p class="skill-name">MySQL</p>
+          <p class="skill-level">Intermediate</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="github.jpg" alt="GitHub" />
+          <p class="skill-name">GitHub</p>
+          <p class="skill-level">Basic</p>
+        </div>
+      </div>
+    </section>
+
+    <section id = "projects" class="projects-section">
+    <h2>My Work</h2>
+    <div class="projects-container">
+      
+      <!-- Project Card -->
+      <div class="project-card">
+        <img src="homehelp.png" alt="Homehelp Hub" />
+        <div class="overlay">
+          <h3>Homehelp Hub</h3>
+          <p>A platform to search, connect, and hire trusted home maids based on location and service needs.</p>
+          </div>
+      </div>
+
+      <!-- Duplicate this block for more projects -->
+      <div class="project-card">
+        <img src="Spotify.webp" alt="Spotify clone" />
+        <div class="overlay">
+          <h3>Spotify clone</h3>
+          <p>A clean, responsive app for discovering and playing music seamlessly.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="banking.jpg" alt="Banking Management" />
+        <div class="overlay">
+          <h3>Banking Management App</h3>
+          <p>A secure web-based banking system with user login, fund transfers, and transaction history management.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-text">
+        Feel free to reach out for collaborations, questions, or just to say hello!
+      </p>
+      <div class="contact-details">
+        <p>Email: <a href="mailto:smruti@example.com">smrutipanigrahy70@gmail.com</a></p>
+        <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+    </section>
+    <footer class="footer">
+   <div class="footer-left">
+    <div class="logo"><img src="logo.jpg" alt="Smruti Panigrahy"></div>
+     
+    <p>© 2025 Smruti Panigrahy. All rights reserved.</p>
+   </div>
+   <div class="footer-right">
+     <div class="footer-icons">
+       <a href="https://github.com/panigrahysmruti" target="_blank" aria-label="GitHub">
+         <img src="git.jpg" alt="GitHub" />
+       </a>
+       <a href="https://www.linkedin.com/in/smruti-panigrahy/" target="_blank" aria-label="LinkedIn">
+         <img src="linkedin.jpg" alt="LinkedIn" />
+       </a>
+     </div>
+   </div>
+ </footer>
+
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>
